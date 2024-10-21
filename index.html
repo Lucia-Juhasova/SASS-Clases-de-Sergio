@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SASS</title>
+</head>
+<body>
+  <h1>SASS</h1>
+
+  <section class="nesting">
+    <div class="list">
+      <div>
+        <article>
+          <h2>Primer article</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+            quos, officia eos nostrum repudiandae doloremque voluptatem
+            accusantium soluta! Assumenda, voluptatibus.
+          </p>
+          <a href="read-more">Leer más</a>
+        </article>
+      </div>
+      <div>
+        <article>
+          <h2>Primer article</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+            quos, officia eos nostrum repudiandae doloremque voluptatem
+            accusantium soluta! Assumenda, voluptatibus.
+          </p>
+          <a href="read-more">Leer más</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nesting con metología BEM (bloque, elemento, modificador) -->
+<section class="bem">
+      <div class="bem__list">
+      <div>
+        <article class="bem__article">
+          <h2>Primer article</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+            quos, officia eos nostrum repudiandae doloremque voluptatem
+            accusantium soluta! Assumenda, voluptatibus.
+          </p>
+          <a href="read-more">Leer más</a>
+        </article>
+      </div>
+      <div>
+        <article class="bem__article bem__article--border">
+          <h2>Primer article</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+            quos, officia eos nostrum repudiandae doloremque voluptatem
+            accusantium soluta! Assumenda, voluptatibus.
+          </p>
+          <a href="read-more">Leer más</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Variables -->
+  <div class="variables"></div>
+
+  <!-- Mixing and extend -->
+<article class="article-1">
+  <h2>Lorem, ipsum dolor.</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sunt dolorum veritatis ad ut laboriosam adipisci deserunt asperiores obcaecati tempore?</p>
+  <button>Leer más</button>
+</article>
+<article class="article-2"> 
+  <h2>Lorem, ipsum dolor.</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sunt dolorum veritatis ad ut laboriosam adipisci deserunt asperiores obcaecati tempore?</p>
+  <button>Leer más</button>
+</article>
+</body>
+</html>
